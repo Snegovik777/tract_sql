@@ -22,7 +22,7 @@ Attribute ConnectSqlServer.VB_ProcData.VB_Invoke_Func = "K\n14"
 "on hist666.ph_id = ph_ref_3.ph_id " & _
 "left join (select ph_id, val_str from dbo.ph_val_reflection where name = 'Изготовитель фонограммы') as ph_ref_4 " & _
 "on hist666.ph_id = ph_ref_4.ph_id " & _
-"WHERE (hist666.BlockId like 'PLAYLIST_RM%' or hist666.BlockId like 'PLAYLIST_RRM%') and hist666.PlayTime between '01.07.2021' and '30.07.2021' and ph_ref.val_str is not null " & _
+"WHERE (hist666.BlockId like 'PLAYLIST_RM%' or hist666.BlockId like 'PLAYLIST_RRM%') and hist666.PlayTime between " & "'" & date1 & "'" & " and " & "'" & date2 & "'" & " and ph_ref.val_str is not null " & _
 "group by hist666.PlayTime, ph.Name, hist666.ph_id, ph_ref.val_str, ph_ref_2.val_str, ph_ref_3.val_str, ph_ref_4.val_str " & _
 "order by hist666.PlayTime"
 
