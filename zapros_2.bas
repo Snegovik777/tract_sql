@@ -6,6 +6,11 @@ Attribute ConnectSqlServer.VB_ProcData.VB_Invoke_Func = "K\n14"
     Dim rs As ADODB.Recordset
     Dim sConnString As String
     Dim sql666 As String
+    Dim date1 As Date
+    Dim date2 As Date
+    
+    date1 = Range("A1").Value2
+    date2 = Range("B1").Value2
     
                   
     sql666 = "SET DATEFORMAT dmy;" & _
