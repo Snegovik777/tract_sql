@@ -12,6 +12,6 @@ left join (select ph_id, val_str from dbo.ph_val_reflection where name = 'Исп
 on hist.ph_id = ph_ref_3.ph_id
 left join (select ph_id, val_str from dbo.ph_val_reflection where name = 'Изготовитель фонограммы') as ph_ref_4
 on hist.ph_id = ph_ref_4.ph_id
-WHERE hist.BlockId like 'PLAYLIST_RM%' and hist.PlayTime between '01.07.2021' and '15.07.2021' and ph_ref.val_str is not null
+WHERE hist.BlockId like 'PLAYLIST_RM%' and hist.PlayTime between '01.08.2021' and '30.08.2021' and ph_ref.val_str is not null
 group by hist.PlayTime, ph.Name, hist.ph_id, ph_ref.val_str, ph_ref_2.val_str, ph_ref_3.val_str, ph_ref_4.val_str
 order by hist.PlayTime  -- остсортированы по даты по возрастанию
