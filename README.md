@@ -1,3 +1,3 @@
 # tract_sql
 
-Запрос вытаскивает из базы отыгранные треки за любой промежуток времени. Авторизация доменная.
+The request pulls tracks played for any period of time from the database. Domain authorization.
